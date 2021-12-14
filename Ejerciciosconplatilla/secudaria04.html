@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hojasdeestilo/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url('imagenes/rock.jpg');
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Abierto desde las 10am hasta 23pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">HARD<br>ROCK</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT HARD ROCK</span></h5>
+    <p></p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>
+Hard Rock Cafe es una cadena de restaurantes fundada en 1971 por Isaac Tigrett y Peter Morton. Todos los establecimientos están decorados con objetos de culto del rock como guitarras de grupos famosos, y mientras se sirve comida típica estadounidense se visualizan videoclips de bandas pertenecientes al género. 
+</i></p>
+      <p>Isaac Tigrett y Peter Morton.</p>
+    </div>
+    <img src="imagenes/interior.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>horario:</strong> desde las 10am hasta las 11pm.</p>
+    <p><strong>Dirección:</strong> Avenida Adeje 300, Avenida Playa Paraíso, s/n, 38678, Adeje (Santa Cruz de Tenerife)</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">bebidas</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>HAMBURGUESA AMERICANA</h5>
+      <p class="w3-text-grey">HAMBURGUER: bacon, lechuga, salsa barbacoa y queso 5.50</p><br>
+    
+      <h5>PIZZA</h5>
+      <p class="w3-text-grey">PIZZA CON JAMON Y QUESO 7.00</p><br>
+    
+      <h5>Waffle</h5>
+      <p class="w3-text-grey"> CON SABOR A VAINILLA Y SIROPE DE CHOCOLATE 7.50</p><br>
+    
+      <h5>COSTILLAS AMAERICANAS</h5>
+      <p class="w3-text-grey">COSTILLAS AL ESILO AMERICANO CON SALSA BARBACOA 7.50</p><br>
+    
+      <h5>BROWNIE</h5>
+      <p class="w3-text-grey">con chocolate y nueces 8.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>CAFE</h5>
+      <p class="w3-text-grey">CAFE 2.50</p><br>
+    
+      <h5>CHOCOLATE CALIENTE</h5>
+      <p class="w3-text-grey">CHOCOLATE CALIENTE 4.50</p><br>
+    
+      <h5>ZUMO DE NARANJA</h5>
+      <p class="w3-text-grey">ZUMO DE NARANJA 5.00</p><br>
+    
+      <h5>BEBIDA CON GAS</h5>
+      <p class="w3-text-grey"> fanta, coca cola, sprite... 3.00</p><br>
+    
+      <h5>CERVEZA</h5>
+      <p class="w3-text-grey">CERVEZA ESPAÑOLA 2.50</p>
+    </div>  
+    <img src="imagenes/cafe.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
